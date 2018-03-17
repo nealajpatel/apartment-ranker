@@ -63,7 +63,7 @@ def get_commute_ranking():
 def get_age_ranking():
 
     if age <= TARGET_AGE:
-        return PRICE_RANK_MAX
+        return AGE_RANK_MAX
     else:
         ranking = AGE_RANK_MAX - ((age - TARGET_AGE) * 0.1)
         return handle_negative_rank(ranking)
